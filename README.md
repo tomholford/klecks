@@ -1,4 +1,30 @@
-🖌️ [Try it out](https://kleki.com/) | ❓ [About](https://kleki.com/about/) | 📝 [Dev Blog](https://blog.kleki.com/)
+<div style="text-align:center">
+ <img src="https://bitbof.com/stuff/2022-01-klecks/2026-04-06-logo.png" alt="Klecks" title="Klecks">
+</div>
+
+<div style="text-align:center">
+  Modern and feature-rich painting app for the web
+</div>
+
+<div style="text-align:center">
+  <h3>
+    <a href="https://kleki.com">
+      Try it out
+    </a>
+    <span> | </span>
+    <a href="https://kleki.com/about/">
+      About
+    </a>
+    <span> | </span>
+    <a href="https://blog.kleki.com">
+      Dev Blog
+    </a>
+    <span> | </span>
+    <a href="https://kleki.com/donate/">
+      Donate
+    </a>
+  </h3>
+</div>
 
 <p style="text-align:center">
 <img src="https://bitbof.com/stuff/2022-01-klecks/2026-03-28-klecks-github.png" alt="Klecks"><br>
