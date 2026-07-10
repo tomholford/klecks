@@ -192,9 +192,12 @@ export class ProjectViewport {
         }
 
         // this.ctx.scale(this.resFactor, this.resFactor);
+        // Order (translate, rotate, scale) must match createMatrixFromTransform, which is
+        // used below for the background pattern and function-layer draws. They diverge only
+        // when scale is non-uniform (scaleX !== scaleY) and rotated; keep them consistent.
         this.ctx.translate(renderedTransform.x, renderedTransform.y);
-        this.ctx.scale(renderedTransform.scaleX, renderedTransform.scaleY);
         this.ctx.rotate((renderedTransform.angleDeg / 180) * Math.PI);
+        this.ctx.scale(renderedTransform.scaleX, renderedTransform.scaleY);
 
         if (this.drawBackground) {
             this.ctx.save();
