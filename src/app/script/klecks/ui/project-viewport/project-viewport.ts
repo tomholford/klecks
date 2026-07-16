@@ -192,9 +192,8 @@ export class ProjectViewport {
         }
 
         // this.ctx.scale(this.resFactor, this.resFactor);
-        this.ctx.translate(renderedTransform.x, renderedTransform.y);
-        this.ctx.scale(renderedTransform.scaleX, renderedTransform.scaleY);
-        this.ctx.rotate((renderedTransform.angleDeg / 180) * Math.PI);
+        // same matrix as the background pattern and function-layer draws below
+        this.ctx.transform(...matrixToTuple(renderedMat));
 
         if (this.drawBackground) {
             this.ctx.save();
